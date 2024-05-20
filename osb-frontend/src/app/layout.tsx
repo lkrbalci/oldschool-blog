@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { VT323 } from "next/font/google";
 import "./globals.css";
 
 import NavBar from "@/components/navBar/navBar";
 import Footer from "@/components/footer/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const vt323 = VT323({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Oldschool Blog",
@@ -19,12 +22,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <section>
-          <NavBar />
-          {children}
+      <body
+        className={`${vt323.className} bg-primary text-secondary h-screen p-1`}
+      >
+        <main className="border-2 border-secondary">
+          <section className="flex flex-col md:flex-row md:w-2/8 h-[calc(100vh-52px)]">
+            <NavBar />
+            {children}
+            {/* latest */}
           </section>
           <Footer />
+        </main>
       </body>
     </html>
   );
