@@ -18,7 +18,7 @@ const NavLink = ({ link, index }: Props) => {
 
   return (
     <Link className={`rounded m-1 px-1 ${pathName === link.url && "bg-secondary text-primary"}`} href={link.url}>
-        {`${link.title[0]}:\>`}
+        {`${link.title[0]}:\\>`}
         <ReactTyped startDelay={index * 800} strings={[`${link.title.substring(1)}`]} typeSpeed={100} showCursor={false} />
     </Link>
   );
