@@ -8,3 +8,23 @@
     box-sizing: border-box;
     
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #A8A8A8;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #F8FCF8;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0000A8;
+}

@@ -4,6 +4,7 @@ import "./globals.css";
 
 import NavBar from "@/components/navBar/navBar";
 import Footer from "@/components/footer/footer";
+import SideBar from "@/components/sideBar/sideBar";
 
 const vt323 = VT323({
   weight: "400",
@@ -26,9 +27,14 @@ export default function RootLayout({
         className={`${vt323.className} bg-primary text-secondary h-screen p-1`}
       >
         <main className="border-2 border-secondary">
-          <section className="flex flex-col md:flex-row md:w-2/8 h-[calc(100vh-52px)]">
+          <section className="flex flex-col md:flex-row min-h-[calc(100vh-52px)]">
             <NavBar />
+            <div className="md:w-7/12">
             {children}
+            </div>
+            <div className="md:w-3/12">
+              <SideBar />
+            </div>
             {/* latest */}
           </section>
           <Footer />
