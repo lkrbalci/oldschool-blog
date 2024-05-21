@@ -27,7 +27,7 @@ const Navbar = () => {
           ))}
         </div>
       {/* SOCIAL */}
-      <div className="flex md:flex-col gap-2 md:w-3/12">
+      <div className="flex gap-2 items-center md:flex-col md:w-3/12">
         <Link href="/">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>

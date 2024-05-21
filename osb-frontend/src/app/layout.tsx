@@ -29,9 +29,7 @@ export default function RootLayout({
         <main className="border-2 border-secondary">
           <section className="flex flex-col md:flex-row min-h-[calc(100vh-52px)]">
             <NavBar />
-            <div className="md:w-7/12">
-            {children}
-            </div>
+            <div className="md:w-7/12 border-2 border-secondary mx-1 md:mx-0 md:my-1 md:h-[calc(100vh-60px)] md:overflow-y-scroll md:overflow-x-hidden">{children}</div>
             <div className="md:w-3/12">
               <SideBar />
             </div>
