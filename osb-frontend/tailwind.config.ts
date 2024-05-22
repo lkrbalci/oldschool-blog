@@ -22,6 +22,8 @@ const config: Config = {
       'black': '#000',
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/container-queries'),
+  ],
 };
 export default config;
