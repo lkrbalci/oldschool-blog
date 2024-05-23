@@ -1,21 +1,42 @@
-import MainArticleCard from "@/components/mianArticleCard/mainArticleCard";
-import Image from "next/image";
+import ArticleCard from "@/components/articleCard/ArticleCard";
+import FeaturedArticleCard from "@/components/featuredArticleCard/FeaturedArticleCard";
+import Hero from "@/components/hero/hero";
+import LatestArticleCard from "@/components/latestArticleCard/latestArticleCard";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center">
-      <header className="bg-[url('/header.webp')] bg-cover w-5/6 flex justify-center items-center aspect-[1/0.2] mt-16">
-        <h1 className="text-2xl text-primary bg-secondary uppercase p-1 outline outline-[4px] outline-offset-[6px] md:outline-0 lg:outline-4 mix-blend-lighten md:text-3xl lg:text-4xl">
-          ╠ RETRO TECH SOMETHING ╣
-        </h1>
-      </header>
+      <Hero title="Retro Tech Something" />
       {/*Featured*/}
-      <div className="w-4/6  my-6">
-        <MainArticleCard />
+      <div className="w-10/12  mt-20">
+        <h2 className="text-2xl md:text-3xl">Ma Precious Post:</h2>
+        <FeaturedArticleCard />
       </div>
       {/*Latest*/}
-      <div className="w-4/6 my-6 flex flex-col">
-        <MainArticleCard />
+      <div className="@container w-10/12 mt-10">
+        <h2 className="text-xl md:text-2xl">Ma Latest Posts:</h2>
+        <div className="flex flex-col gap-2 @md:flex-row">
+          <LatestArticleCard />
+          <div className="bg-secondary py-[1px] w-11/12 @md:hidden"></div>
+          <LatestArticleCard classes="flex-row-reverse" />
+          <div className="bg-secondary py-[1px] w-11/12 @md:hidden"></div>
+          <LatestArticleCard />
+        </div>
+      </div>
+      {/*More*/}
+      <div className="bg-secondary py-[2px] w-11/12 mt-10"></div>
+      <div className="w-10/12 mt-10 @container ">
+        <h2 className="text-lg md:text-xl">More:</h2>
+        <div className="grid grid-cols-1 @sm:grid-cols-2 @sm:gap-x-2 @sm:gap-y-8 @md:grid-cols-3 justify-between">
+          <ArticleCard />
+          <ArticleCard />
+          <ArticleCard />
+          <ArticleCard />
+          <ArticleCard />
+          <ArticleCard />
+          <ArticleCard />
+          <ArticleCard />
+        </div>
       </div>
     </div>
   );

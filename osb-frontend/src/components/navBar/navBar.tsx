@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import NavLink from "./atomic/navLink";
 
 const links = [
@@ -11,7 +10,7 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between px-4 text-xl m-1 border-2 border-secondary md:p-0 md:flex-col md:items-center md:justify-around md:w-1/6">
+    <header className="flex items-center justify-between px-4 text-xl m-1 border-2 border-secondary md:p-0 md:flex-col md:items-center md:justify-around md:w-1/6">
       {/* LOGO */}
       <div className="h-8 w-8 relative hover:scale-150 hover:cursor-pointer md:h-24 md:w-24">
         <Link href={"/"}>
@@ -45,7 +44,7 @@ const Navbar = () => {
           <Image src="/linkedin.png" alt="" width={24} height={24} />
         </Link>
       </div>
-    </div>
+    </header>
   );
 };
 
