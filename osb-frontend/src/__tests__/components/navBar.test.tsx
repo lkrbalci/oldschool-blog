@@ -10,13 +10,13 @@ describe("Navbar component", () => {
 
   test("renders navigation links", () => {
     render(<Navbar />);
-    const homeLink = screen.getByRole("link", { name: /H:/i });
-    const contactLink = screen.getByRole("link", { name: /C:/i });
-    const aboutLink = screen.getByRole("link", { name: /A:/i });
+    const hLinks = screen.getAllByRole("link", { name: /H:/i });
+    const cLinks = screen.getAllByRole("link", { name: /C:/i });
+    const aLinks = screen.getAllByRole("link", { name: /A:/i });
 
-    expect(homeLink).toBeInTheDocument();
-    expect(contactLink).toBeInTheDocument();
-    expect(aboutLink).toBeInTheDocument();
+    expect(hLinks.length).toBeGreaterThan(0);
+    expect(cLinks.length).toBeGreaterThan(0);
+    expect(aLinks.length).toBeGreaterThan(0);
   });
 
   test("renders social media icons", () => {

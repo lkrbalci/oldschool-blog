@@ -5,7 +5,7 @@ type Props = {};
 
 const FeaturedArticleCard = (props: Props) => {
   return (
-    <article className="relative aspect-[720/405] group overflow-hidden cursor-pointer">
+    <article className=" shadow-random-lg relative aspect-[720/405] group overflow-hidden cursor-pointer">
       <Image
         src="/pexels-kevinbidwell-pacman.jpg"
         alt="header by Lorenzo Herrera"

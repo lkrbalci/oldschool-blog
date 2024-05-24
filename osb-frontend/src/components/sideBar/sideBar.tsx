@@ -13,55 +13,23 @@ const SideBar = (props: Props) => {
       <div className="hidden mt-16 md:block">
         <Categories />
       </div>
-      <div className="hidden py-1 bg-secondary mt-8 mb-6 w-10/12 md:block lg:w-8/12" />
+      <div className="hidden py-0.5 rounded-sm bg-secondary mt-8 mb-6 w-10/12 md:block lg:w-8/12" />
       <h2 className="text-md  mb-2 sm:text-lg @md:text-2xl">
         Some Random Posts:
       </h2>
       <div className="w-7/12 px-1 grid grid-cols-3 md:grid-cols-1 gap-2 md:overflow-y-scroll @lg:10/12">
-        <div>
-          <ArticleCard />
-          <div className="py-[1px] bg-secondary my-1"></div>
-        </div>
-        <div>
-          <ArticleCard />
-          <div className="py-[1px] bg-secondary my-1"></div>
-        </div>
-        <div>
-          <ArticleCard />
-          <div className="py-[1px] bg-secondary my-1"></div>
-        </div>
-        <div>
-          <ArticleCard />
-          <div className="py-[1px] bg-secondary my-1"></div>
-        </div>
-        <div>
-          <ArticleCard />
-          <div className="py-[1px] bg-secondary my-1"></div>
-        </div>
-        <div>
-          <ArticleCard />
-          <div className="py-[1px] bg-secondary my-1"></div>
-        </div>
-        <div>
-          <ArticleCard />
-          <div className="py-[1px] bg-secondary my-1"></div>
-        </div>
-        <div>
-          <ArticleCard />
-          <div className="py-[1px] bg-secondary my-1"></div>
-        </div>
-        <div>
-          <ArticleCard />
-          <div className="py-[1px] bg-secondary my-1"></div>
-        </div>
-        <div>
-          <ArticleCard />
-          <div className="py-[1px] bg-secondary my-1"></div>
-        </div>
-        <div>
-          <ArticleCard />
-          <div className="py-[1px] bg-secondary my-1"></div>
-        </div>
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
+        <ArticleCard />
       </div>
     </div>
   );

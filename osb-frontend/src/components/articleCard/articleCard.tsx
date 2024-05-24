@@ -5,7 +5,7 @@ type Props = {};
 
 const ArticleCard = (props: Props) => {
   return (
-    <article className="@container relative group cursor-pointer">
+    <article className="@container relative group cursor-pointer shadow-random-sm mb-2">
       <div className="relative aspect-[720/405]">
         <Image
           src="/pexels-kevinbidwell-pacman.jpg"

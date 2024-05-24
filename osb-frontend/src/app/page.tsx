@@ -24,7 +24,7 @@ export default function Home() {
         </div>
       </div>
       {/*More*/}
-      <div className="bg-secondary py-[2px] w-11/12 mt-10"></div>
+      <div className="bg-secondary rounded-sm py-[2px] w-11/12 mt-10"></div>
       <div className="w-10/12 mt-10 @container ">
         <h2 className="text-lg md:text-xl">More:</h2>
         <div className="grid grid-cols-1 @sm:grid-cols-2 @sm:gap-x-2 @sm:gap-y-8 @md:grid-cols-3 justify-between">
