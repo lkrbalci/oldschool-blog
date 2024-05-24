@@ -12,22 +12,22 @@ const Categories = (props: Props) => {
       </h1>
       <Link href={"/category-1"}>
         <h3 className="text-lg hover:bg-secondary hover:text-primary">
-          ├ Category 1
+          <span>├</span> Category 1
         </h3>
       </Link>
       <Link href={"/"}>
         <h3 className="text-lg hover:bg-secondary hover:text-primary">
-          ├ Category 2
+          <span>├</span> Category 2
         </h3>
       </Link>
       <Link href={"/"}>
         <h3 className="text-lg hover:bg-secondary hover:text-primary">
-          ├ Category 3
+          <span>├</span> Category 3
         </h3>
       </Link>
       <Link href={"/"}>
         <h3 className="text-lg hover:bg-secondary hover:text-primary">
-          └ Category 4
+          <span>└</span> Category 4
         </h3>
       </Link>
       <h3></h3>

@@ -1,5 +1,5 @@
-import ArticleCard from "@/components/articleCard/ArticleCard";
-import FeaturedArticleCard from "@/components/featuredArticleCard/FeaturedArticleCard";
+import ArticleCard from "@/components/articleCard/articleCard";
+import FeaturedArticleCard from "@/components/featuredArticleCard/featuredArticleCard";
 import Hero from "@/components/hero/hero";
 import LatestArticleCard from "@/components/latestArticleCard/latestArticleCard";
 

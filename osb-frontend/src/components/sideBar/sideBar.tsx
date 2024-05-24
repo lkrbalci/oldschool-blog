@@ -1,12 +1,15 @@
 import React from "react";
-import Categories from "../categories/Categories";
-import ArticleCard from "../articleCard/ArticleCard";
+import Categories from "../categories/categories";
+import ArticleCard from "../articleCard/articleCard";
 
 type Props = {};
 
 const SideBar = (props: Props) => {
   return (
-    <div className="border-2 border-secondary m-1 md:h-[calc(100vh-60px)] md:overflow-y-scroll flex flex-col items-center">
+    <div
+      data-testid="sidebar"
+      className="border-2 border-secondary m-1 md:h-[calc(100vh-60px)] md:overflow-y-scroll flex flex-col items-center"
+    >
       <div className="mt-16">
         <Categories />
       </div>

@@ -11,7 +11,7 @@ const ArticleCard = (props: Props) => {
           src="/pexels-kevinbidwell-pacman.jpg"
           alt="header by Lorenzo Herrera"
           fill
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
         ></Image>
       </div>
       <div className="w-full p-1 flex flex-col justify-center items-start  group-hover:bg-secondary group-hover:text-primary">

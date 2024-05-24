@@ -1,0 +1,34 @@
+./src
+├── __tests__
+│   └── page.test.tsx
+├── app
+│   ├── [category]
+│   │   └── page.tsx
+│   ├── about
+│   │   └── page.tsx
+│   ├── contact
+│   │   └── page.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+└── components
+    ├── articleCard
+    │   └── ArticleCard.tsx
+    ├── categories
+    │   └── Categories.tsx
+    ├── featuredArticleCard
+    │   └── FeaturedArticleCard.tsx
+    ├── footer
+    │   └── footer.tsx
+    ├── hero
+    │   └── hero.tsx
+    ├── latestArticleCard
+    │   └── latestArticleCard.tsx
+    ├── navBar
+    │   ├── atomic
+    │   │   └── navLink.tsx
+    │   └── navBar.tsx
+    └── sideBar
+        └── sideBar.tsx
+
+15 directories, 16 files
