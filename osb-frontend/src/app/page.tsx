@@ -8,7 +8,7 @@ export default function Home() {
     <div className="flex flex-col items-center">
       <Hero title="Retro Tech Something" />
       {/*Featured*/}
-      <div className="w-10/12  mt-20">
+      <div className="w-10/12  mt-16">
         <h2 className="text-2xl md:text-3xl">Ma Precious Post:</h2>
         <FeaturedArticleCard />
       </div>

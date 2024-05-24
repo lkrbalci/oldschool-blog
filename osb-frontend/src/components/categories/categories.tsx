@@ -10,7 +10,7 @@ const Categories = (props: Props) => {
         <span className="text-lg">╔ </span>
         Categories
       </h1>
-      <Link href={"/category-1"}>
+      <Link href={"/categories/category-1"}>
         <h3 className="text-lg hover:bg-secondary hover:text-primary">
           <span>├</span> Category 1
         </h3>

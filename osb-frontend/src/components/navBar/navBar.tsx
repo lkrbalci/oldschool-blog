@@ -4,6 +4,7 @@ import NavLink from "./atomic/navLink";
 
 const links = [
   { url: "/", title: "Home" },
+  { url: "/categories", title: "Categories" },
   { url: "/contact", title: "Contact" },
   { url: "/about", title: "About" },
 ];
@@ -22,7 +23,7 @@ const Navbar = () => {
         </Link>
       </div>
       {/* LINKS */}
-      <div className="flex items-center justify-evenly w-4/6 md:flex-col md:w-full md:text-3xl">
+      <div className="flex items-center justify-evenly w-4/6 md:flex-col md:w-full md:text-2xl">
         {links.map((link, index) => (
           <NavLink link={link} index={index} key={link.title} />
         ))}
