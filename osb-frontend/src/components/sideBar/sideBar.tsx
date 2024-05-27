@@ -8,16 +8,16 @@ const SideBar = (props: Props) => {
   return (
     <div
       data-testid="sidebar"
-      className="@container border-2 border-secondary m-1 md:h-[calc(100vh-60px)] flex flex-col items-center"
+      className="m-1 flex flex-col items-center border-2 border-secondary @container md:h-[calc(100vh-60px)]"
     >
-      <div className="hidden mt-16 md:block">
+      <div className="mt-16 hidden md:block">
         <Categories />
       </div>
-      <div className="hidden py-0.5 rounded-sm bg-secondary mt-8 mb-6 w-10/12 md:block lg:w-8/12" />
-      <h2 className="text-md  mb-2 sm:text-lg @md:text-2xl">
+      <div className="mb-6 mt-8 hidden w-10/12 rounded-sm bg-secondary py-0.5 md:block lg:w-8/12" />
+      <h2 className="text-md mb-2  mt-8 @md:text-2xl sm:text-lg md:mt-0">
         Some Random Posts:
       </h2>
-      <div className="w-7/12 px-1 grid grid-cols-3 md:grid-cols-1 gap-2 md:overflow-y-scroll @lg:10/12">
+      <div className="mt-6 grid w-10/12 grid-cols-3 gap-4 px-1 md:mt-2 md:grid-cols-1 md:overflow-y-scroll lg:w-7/12">
         <ArticleCard />
         <ArticleCard />
         <ArticleCard />
