@@ -17,7 +17,7 @@ const SideBar = (props: Props) => {
       <h2 className="text-md mb-2  mt-8 @md:text-2xl sm:text-lg md:mt-0">
         Some Random Posts:
       </h2>
-      <div className="mt-6 grid w-10/12 grid-cols-3 gap-4 px-1 md:mt-2 md:grid-cols-1 md:overflow-y-scroll lg:w-7/12">
+      <div className="mb-16 mt-6 grid w-10/12 grid-cols-3 gap-x-2 gap-y-8 px-1 md:mt-2 md:grid-cols-1 md:overflow-y-scroll lg:w-7/12">
         <ArticleCard />
         <ArticleCard />
         <ArticleCard />

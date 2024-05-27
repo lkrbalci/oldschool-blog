@@ -29,7 +29,7 @@ const Navbar = () => {
         ))}
       </div>
       {/* SOCIAL */}
-      <div className=" hidden items-center sm:flex sm:gap-2 md:w-3/12 md:flex-col">
+      <div className="hidden items-center sm:flex sm:gap-2 md:w-3/12 md:flex-col">
         <Link href="/">
           <Image src="/github.png" alt="GitHub icon" width={24} height={24} />
         </Link>

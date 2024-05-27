@@ -6,7 +6,7 @@ type Props = { classes?: string };
 const LatestArticleCard = ({ classes }: Props) => {
   return (
     <article
-      className={`group relative flex cursor-pointer gap-3 @md:w-1/3 @md:flex-col @md:gap-0 ${classes} shadow-random-sm`}
+      className={`group relative flex cursor-pointer @md:w-1/3 @md:flex-col ${classes} shadow-random-sm`}
     >
       <div className="relative aspect-[720/405] w-full @md:w-full ">
         <Image
