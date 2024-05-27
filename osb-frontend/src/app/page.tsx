@@ -17,9 +17,9 @@ export default function Home() {
         <h2 className="text-xl md:text-2xl">Ma Latest Posts:</h2>
         <div className="flex flex-col gap-2 @md:flex-row">
           <LatestArticleCard />
-          <div className="m-1 w-full bg-secondary p-[1px] @md:hidden"></div>
+          <div className="my-2 w-full bg-secondary p-[1px] @md:hidden"></div>
           <LatestArticleCard classes="flex-row-reverse" />
-          <div className="w-full bg-secondary py-[1px] @md:hidden"></div>
+          <div className="my-2 w-full bg-secondary py-[1px] @md:hidden"></div>
           <LatestArticleCard />
         </div>
       </div>

@@ -27,12 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${vt323.className} bg-primary text-secondary h-screen p-1`}
+        className={`${vt323.className} h-screen bg-primary p-1 text-secondary`}
       >
         <main className="border-2 border-secondary">
-          <section className="flex flex-col md:flex-row min-h-[calc(100vh-52px)]">
+          <section className="flex min-h-[calc(100vh-52px)] flex-col md:flex-row">
             <NavBar />
-            <div className="border-2 border-secondary mx-1 pt-10 md:mx-0 md:my-1 md:h-[calc(100vh-60px)] md:overflow-y-scroll md:overflow-x-hidden md:w-7/12">
+            <div className="mx-1 border-2 border-secondary pt-12 md:mx-0 md:my-1 md:h-[calc(100vh-60px)] md:w-7/12 md:overflow-x-hidden md:overflow-y-scroll md:pt-20 lg:pt-12">
               {children}
             </div>
             <div className="md:w-3/12">

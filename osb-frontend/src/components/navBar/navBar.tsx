@@ -29,8 +29,8 @@ const Navbar = () => {
         ))}
       </div>
       {/* SOCIAL */}
-      <div className="hidden items-center sm:flex sm:gap-2 md:w-3/12 md:flex-col">
-        <Link href="/">
+      <div className="flex items-center gap-2 md:w-3/12 md:flex-col">
+        <Link href="/" className="relative h-4 w-4 sm:h-6 sm:w-6">
           <Image src="/github.png" alt="GitHub icon" width={24} height={24} />
         </Link>
         <Link href="/" className="hidden">
@@ -41,7 +41,7 @@ const Navbar = () => {
             height={24}
           />
         </Link>
-        <Link href="/">
+        <Link href="/" className="relative h-4 w-4 sm:h-6 sm:w-6">
           <Image
             src="/instagram.png"
             alt="Instagram icon"
@@ -65,13 +65,8 @@ const Navbar = () => {
             height={24}
           />
         </Link>
-        <Link href="/">
-          <Image
-            src="/linkedin.png"
-            alt="LinkedIn icon"
-            width={24}
-            height={24}
-          />
+        <Link href="/" className="relative h-4 w-4 sm:h-6 sm:w-6">
+          <Image src="/linkedin.png" alt="LinkedIn icon" fill />
         </Link>
       </div>
     </header>
