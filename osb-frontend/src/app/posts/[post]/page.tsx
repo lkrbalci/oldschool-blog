@@ -11,7 +11,7 @@ const text = `  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta 
 
 const page = (props: Props) => {
   return (
-    <article className="relative flex w-11/12 flex-col items-center">
+    <article className="relative flex w-11/12 flex-col items-center self-center">
       <h1 className="mb-8 text-2xl md:text-3xl">Missing Those Days</h1>
       <Image
         src="/header.webp"
