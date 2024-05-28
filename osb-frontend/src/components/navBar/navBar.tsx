@@ -33,7 +33,7 @@ const Navbar = () => {
         <Link href="/" className="relative h-4 w-4 sm:h-6 sm:w-6">
           <Image src="/github.png" alt="GitHub icon" width={24} height={24} />
         </Link>
-        <Link href="/" className="hidden">
+        <Link href="/" className="relative hidden h-4 w-4 sm:h-6 sm:w-6">
           <Image
             src="/dribbble.png"
             alt="Dribbble icon"
@@ -41,7 +41,7 @@ const Navbar = () => {
             height={24}
           />
         </Link>
-        <Link href="/" className="relative h-4 w-4 sm:h-6 sm:w-6">
+        <Link href="/" className="relative hidden h-4 w-4 sm:h-6 sm:w-6">
           <Image
             src="/instagram.png"
             alt="Instagram icon"
@@ -49,7 +49,7 @@ const Navbar = () => {
             height={24}
           />
         </Link>
-        <Link href="/" className="hidden">
+        <Link href="/" className="relative hidden h-4 w-4 sm:h-6 sm:w-6">
           <Image
             src="/facebook.png"
             alt="facebook icon"
@@ -57,15 +57,16 @@ const Navbar = () => {
             height={24}
           />
         </Link>
-        <Link href="/" className="hidden">
-          <Image
-            src="/pinterest.png"
-            alt="Pinterest icon"
-            width={24}
-            height={24}
-          />
+        <Link
+          href="/www.youtube.com/@RootiferasRetroGameplay"
+          className="relative h-4 w-4 sm:h-6 sm:w-6"
+        >
+          <Image src="/youtube.png" alt="Youtube icon" width={24} height={24} />
         </Link>
-        <Link href="/" className="relative h-4 w-4 sm:h-6 sm:w-6">
+        <Link
+          href="https://www.linkedin.com/in/ozbahceliler/"
+          className="relative h-4 w-4 sm:h-6 sm:w-6"
+        >
           <Image src="/linkedin.png" alt="LinkedIn icon" fill />
         </Link>
       </div>
