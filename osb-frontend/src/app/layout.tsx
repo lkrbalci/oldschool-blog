@@ -32,7 +32,7 @@ export default function RootLayout({
         <main className="border-2 border-secondary">
           <section className="flex min-h-[calc(100vh-52px)] flex-col md:flex-row">
             <NavBar />
-            <div className="mx-1 flex flex-col border-2 border-secondary pt-12 md:mx-0 md:my-1 md:h-[calc(100vh-60px)] md:w-7/12 md:overflow-x-hidden md:overflow-y-scroll md:pt-20 lg:pt-12">
+            <div className="mx-1 flex flex-col border-2 border-secondary pt-12 md:mx-0 md:my-1 md:h-[calc(100vh-60px)] md:w-7/12 md:overflow-x-hidden md:overflow-y-scroll md:pt-16">
               {children}
             </div>
             <div className="md:w-3/12">

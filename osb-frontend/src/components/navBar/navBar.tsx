@@ -9,15 +9,15 @@ const links = [
   { url: "/about", title: "About" },
 ];
 
-const Navbar = () => {
+const Navbar = async () => {
   return (
     <header
       role="navigation"
       data-testid="navbar"
-      className="m-1 flex items-center border-2 border-secondary px-4 text-xl sm:justify-between md:w-1/6 md:flex-col md:items-center md:justify-around md:p-0"
+      className="m-1 flex items-center border-2 border-secondary px-4 text-xl sm:justify-between md:w-1/6 md:flex-col md:items-center md:justify-between md:p-0"
     >
       {/* LOGO */}
-      <div className="relative h-6 w-6 hover:scale-150 hover:cursor-pointer sm:h-8 sm:w-8 md:h-24 md:w-24">
+      <div className="relative h-6 w-6 hover:scale-150 hover:cursor-pointer sm:h-8 sm:w-8 md:mt-16 md:h-24 md:w-24">
         <Link href={"/"}>
           <Image src="/rootifera.png" alt="Rootifera Logo" fill />
         </Link>
@@ -29,7 +29,7 @@ const Navbar = () => {
         ))}
       </div>
       {/* SOCIAL */}
-      <div className="flex items-center gap-2 md:w-3/12 md:flex-col">
+      <div className="relative flex items-center gap-2 md:bottom-16 md:w-3/12 md:flex-col">
         <Link href="/" className="relative h-4 w-4 sm:h-6 sm:w-6">
           <Image src="/github.png" alt="GitHub icon" width={24} height={24} />
         </Link>

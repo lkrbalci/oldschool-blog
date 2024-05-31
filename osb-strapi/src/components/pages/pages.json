@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_pages_pages",
+  "info": {
+    "displayName": "pages",
+    "icon": "layout",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

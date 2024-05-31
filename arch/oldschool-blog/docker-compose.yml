@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  oldschool-blog_frontend:
+    image: lkrbalci/oldschool-blog_frontend
+    ports:
+      - "3007:3000"

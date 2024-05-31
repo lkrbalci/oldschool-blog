@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "layouts",
+  "info": {
+    "singularName": "layout",
+    "pluralName": "layouts",
+    "displayName": "layout",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "social": {
+      "displayName": "socials",
+      "type": "component",
+      "repeatable": true,
+      "component": "socials.socials"
+    },
+    "pages": {
+      "displayName": "pages",
+      "type": "component",
+      "repeatable": true,
+      "component": "pages.pages"
+    }
+  }
+}
