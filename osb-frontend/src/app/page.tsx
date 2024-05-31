@@ -23,6 +23,7 @@ export default function Home() {
           <LatestArticleCard />
         </div>
       </div>
+
       {/*More*/}
       <div className="mb-8 mt-16 w-11/12 rounded-sm bg-secondary py-[2px] sm:mb-16 sm:mt-20 md:mb-10"></div>
       <div className="mb-16 w-10/12 @container">

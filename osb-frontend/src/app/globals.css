@@ -9,6 +9,9 @@
     
 }
 
+
+/* -------- SCROLLBAR --------- */
+
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
@@ -31,3 +34,45 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #A8A8A8;
 }
+
+
+/* -------- WIGGLE ANIMATION --------- */
+
+@keyframes wiggle {
+    0% {
+      transform: skewX(9deg);
+      transform: translateY(0);
+    }
+    10% {
+      transform: skewX(-8deg);
+    }
+    20% {
+      transform: skewX(7deg);
+    }
+    30% {
+      transform: skewX(-6deg);
+    }
+    40% {
+      transform: skewX(5deg);
+      transform: translateY(-30px);
+    }
+    50% {
+      transform: skewX(-4deg);
+    }
+    60% {
+      transform: skewX(3deg);
+      transform: translateY(-15px);
+    }
+    70% {
+      transform: skewX(-2deg);
+    }
+    80% {
+      transform: skewX(1deg);
+    }
+    90% {
+      transform: skewX(0deg);
+    }
+    100% {
+      transform: skewX(0deg);
+    }
+  }

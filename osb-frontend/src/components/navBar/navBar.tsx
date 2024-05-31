@@ -19,7 +19,13 @@ const Navbar = async () => {
       {/* LOGO */}
       <div className="relative h-6 w-6 hover:scale-150 hover:cursor-pointer sm:h-8 sm:w-8 md:mt-16 md:h-24 md:w-24">
         <Link href={"/"}>
-          <Image src="/rootifera.png" alt="Rootifera Logo" fill />
+          <Image
+            className="bg-blue-500 h-16 w-16 rotate-90 animate-[wiggle_1s_ease-in-out_infinite] rounded-full"
+            // className="bg-blue-500 h-16 w-16 rotate-90 rounded-full"
+            src="/9423705.png"
+            alt="Rootifera Logo"
+            fill
+          />
         </Link>
       </div>
       {/* LINKS */}
