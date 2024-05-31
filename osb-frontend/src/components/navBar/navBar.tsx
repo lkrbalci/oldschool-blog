@@ -17,7 +17,7 @@ const Navbar = async () => {
       className="m-1 flex items-center border-2 border-secondary px-4 text-xl sm:justify-between md:w-1/6 md:flex-col md:items-center md:justify-between md:p-0"
     >
       {/* LOGO */}
-      <div className="relative h-6 w-6 hover:scale-150 hover:cursor-pointer sm:h-8 sm:w-8 md:mt-16 md:h-24 md:w-24">
+      <div className="relative h-6 w-6 overflow-visible hover:scale-150 hover:cursor-pointer sm:h-8 sm:w-8 md:mt-16 md:h-24 md:w-24">
         <Link href={"/"}>
           <Image
             className="bg-blue-500 h-16 w-16 rotate-90 animate-[wiggle_1s_ease-in-out_infinite] rounded-full"
@@ -27,6 +27,9 @@ const Navbar = async () => {
             fill
           />
         </Link>
+        <div className="speech left absolute -top-16 left-20 bg-secondary">
+          F*ck Bitten Apple!
+        </div>
       </div>
       {/* LINKS */}
       <div className="sm:4/6 flex w-5/6 items-center justify-center text-sm sm:justify-evenly sm:text-xl md:w-full md:flex-col md:text-2xl">

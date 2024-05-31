@@ -24,6 +24,14 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="bg-gray-200 flex min-h-screen items-center justify-center">
+        <div className="bg-white relative w-64 rounded-lg border-4 border-black p-4 shadow-lg">
+          <p className="font-bold text-black">text</p>
+          <div className="border-l-transparent border-r-transparent absolute bottom-[-20px] left-10 h-0 w-0 border-l-[10px] border-r-[10px] border-t-[20px] border-t-black"></div>
+          <div className="border-t-white border-l-transparent border-r-transparent absolute bottom-[-18px] left-10 h-0 w-0 border-l-[9px] border-r-[9px] border-t-[18px]"></div>
+        </div>
+      </div>
+
       {/*More*/}
       <div className="mb-8 mt-16 w-11/12 rounded-sm bg-secondary py-[2px] sm:mb-16 sm:mt-20 md:mb-10"></div>
       <div className="mb-16 w-10/12 @container">
