@@ -18,7 +18,7 @@ const AvatarWithAnime = (props: Props) => {
         <Image
           className={`bg-blue-500 h-16 w-16 rounded-full ${randomValue === "event1" && "animate-wiggle"} ${randomValue === "event2" && "animate-bounce"}`}
           src="/9423705.png"
-          alt="Rootifera Logo"
+          alt="Logo Image"
           fill
         />
       </Link>

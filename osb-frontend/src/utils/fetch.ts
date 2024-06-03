@@ -1,18 +1,20 @@
 import keys from "@/keys";
 
-const fetchPages = async () => {
+const fetchLayout = async () => {
   "use server";
   const reqOptions = {
-    next: { tags: ["fetch-pages"] },
+    next: { tags: ["fetch-layout"] },
     headers: {
       Authorization: `Bearer ${keys.API_TOKEN}`,
     },
   };
 
-  const request = await fetch(`${keys.API_URL}/api/pages`, { ...reqOptions });
+  const request = await fetch(`${keys.API_URL}/api/layout?populate=*`, {
+    ...reqOptions,
+  });
   const response = await request.json();
 
   return response;
 };
 
-export { fetchPages };
+export { fetchLayout };

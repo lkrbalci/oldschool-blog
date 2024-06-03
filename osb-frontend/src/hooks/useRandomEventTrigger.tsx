@@ -8,9 +8,9 @@ const useRandomValues = (): string | null => {
     let timeout1: NodeJS.Timeout;
     let timeout2: NodeJS.Timeout;
 
-    const values: string[] = ["event1", "event2", "event3", "event4", "event5"];
+    const events: string[] = ["event1", "event2", "event3", "event4", "event5"];
     const getRandomValue = (): string =>
-      values[Math.floor(Math.random() * values.length)];
+      events[Math.floor(Math.random() * events.length)];
 
     const updateValue = () => {
       if (isMounted) {

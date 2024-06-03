@@ -2,15 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./atomic/navLink";
 import AvatarWithAnime from "../avatarWithAnime/AvatarWithAnime";
-
-const links = [
-  { url: "/", title: "Home" },
-  { url: "/categories", title: "Categories" },
-  { url: "/contact", title: "Contact" },
-  { url: "/about", title: "About" },
-];
+import { fetchLayout } from "@/utils/fetch";
 
 const Navbar = async () => {
+  const layout: any = await fetchLayout();
+
   return (
     <header
       role="navigation"
@@ -23,7 +19,7 @@ const Navbar = async () => {
       </div>
       {/* LINKS */}
       <div className="sm:4/6 flex w-5/6 items-center justify-center text-sm sm:justify-evenly sm:text-xl md:w-full md:flex-col md:text-2xl">
-        {links.map((link, index) => (
+        {layout.data.attributes.pages.map((link: any, index: number) => (
           <NavLink link={link} index={index} key={link.title} />
         ))}
       </div>
