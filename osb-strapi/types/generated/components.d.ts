@@ -8,8 +8,8 @@ export interface PagesPages extends Schema.Component {
     description: '';
   };
   attributes: {
-    url: Attribute.String & Attribute.Required & Attribute.Unique;
-    name: Attribute.String & Attribute.Required & Attribute.Unique;
+    name: Attribute.String & Attribute.Required;
+    url: Attribute.String & Attribute.Required;
   };
 }
 

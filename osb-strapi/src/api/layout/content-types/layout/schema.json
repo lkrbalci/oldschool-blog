@@ -27,7 +27,7 @@
       "component": "socials.socials"
     },
     "pages": {
-      "displayName": "pages",
+      "displayName": "Pages",
       "type": "component",
       "repeatable": true,
       "component": "pages.pages"

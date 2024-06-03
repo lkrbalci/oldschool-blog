@@ -4,10 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 import useRandomValues from "@/hooks/useRandomEventTrigger";
+import { Media } from "@/types/Media";
+import keys from "@/keys";
 
-type Props = {};
+type Props = { logo: { data: Media } | undefined };
 
-const AvatarWithAnime = (props: Props) => {
+const AvatarWithAnime = ({ logo }: Props) => {
   const randomValue = useRandomValues();
 
   let showSpeech: String = randomValue !== "event3" ? "hidden" : "block";
@@ -17,7 +19,7 @@ const AvatarWithAnime = (props: Props) => {
       <Link href={"/"}>
         <Image
           className={`bg-blue-500 h-16 w-16 rounded-full ${randomValue === "event1" && "animate-wiggle"} ${randomValue === "event2" && "animate-bounce"}`}
-          src="/9423705.png"
+          src={`${keys.API_URL}${logo?.data.attributes.url}`}
           alt="Logo Image"
           fill
         />

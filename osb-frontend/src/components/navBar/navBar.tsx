@@ -3,9 +3,13 @@ import Link from "next/link";
 import NavLink from "./atomic/navLink";
 import AvatarWithAnime from "../avatarWithAnime/AvatarWithAnime";
 import { fetchLayout } from "@/utils/fetch";
+import { Payload } from "@/types/Payload";
+import { Layout } from "@/types/layout";
 
 const Navbar = async () => {
-  const layout: any = await fetchLayout();
+  const layout: Payload<Layout> = await fetchLayout();
+
+  console.log(layout.data.attributes);
 
   return (
     <header
@@ -15,12 +19,12 @@ const Navbar = async () => {
     >
       {/* LOGO */}
       <div className="relative h-6 w-6 overflow-visible hover:scale-150 hover:cursor-pointer sm:h-8 sm:w-8 md:mt-16 md:h-24 md:w-24">
-        <AvatarWithAnime />
+        <AvatarWithAnime logo={layout.data.attributes.logo_img} />
       </div>
       {/* LINKS */}
       <div className="sm:4/6 flex w-5/6 items-center justify-center text-sm sm:justify-evenly sm:text-xl md:w-full md:flex-col md:text-2xl">
         {layout.data.attributes.pages.map((link: any, index: number) => (
-          <NavLink link={link} index={index} key={link.title} />
+          <NavLink link={link} index={index} key={link.name} />
         ))}
       </div>
       {/* SOCIAL */}
