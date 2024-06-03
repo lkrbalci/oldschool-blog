@@ -979,6 +979,36 @@ export interface ApiPostPost extends Schema.CollectionType {
   };
 }
 
+export interface ApiSpeechSpeech extends Schema.CollectionType {
+  collectionName: 'speeches';
+  info: {
+    singularName: 'speech';
+    pluralName: 'speeches';
+    displayName: 'speeches';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    speeches: Attribute.Component<'speech.speech', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::speech.speech',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::speech.speech',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1003,6 +1033,7 @@ declare module '@strapi/types' {
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::layout.layout': ApiLayoutLayout;
       'api::post.post': ApiPostPost;
+      'api::speech.speech': ApiSpeechSpeech;
     }
   }
 }

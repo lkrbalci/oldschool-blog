@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./atomic/navLink";
+import AvatarWithAnime from "../avatarWithAnime/AvatarWithAnime";
 
 const links = [
   { url: "/", title: "Home" },
@@ -18,18 +19,7 @@ const Navbar = async () => {
     >
       {/* LOGO */}
       <div className="relative h-6 w-6 overflow-visible hover:scale-150 hover:cursor-pointer sm:h-8 sm:w-8 md:mt-16 md:h-24 md:w-24">
-        <Link href={"/"}>
-          <Image
-            className="bg-blue-500 h-16 w-16 rotate-90 animate-[wiggle_1s_ease-in-out_infinite] rounded-full"
-            // className="bg-blue-500 h-16 w-16 rotate-90 rounded-full"
-            src="/9423705.png"
-            alt="Rootifera Logo"
-            fill
-          />
-        </Link>
-        <div className="speech left absolute -top-16 left-20 bg-secondary">
-          F*ck Bitten Apple!
-        </div>
+        <AvatarWithAnime />
       </div>
       {/* LINKS */}
       <div className="sm:4/6 flex w-5/6 items-center justify-center text-sm sm:justify-evenly sm:text-xl md:w-full md:flex-col md:text-2xl">

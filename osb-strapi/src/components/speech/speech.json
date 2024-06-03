@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_speech_speeches",
+  "info": {
+    "displayName": "speech",
+    "icon": "emotionHappy"
+  },
+  "options": {},
+  "attributes": {
+    "speech": {
+      "type": "string"
+    }
+  }
+}

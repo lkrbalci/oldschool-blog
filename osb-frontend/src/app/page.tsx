@@ -1,4 +1,5 @@
 import ArticleCard from "@/components/articleCard/articleCard";
+import AvatarWithAnime from "@/components/avatarWithAnime/AvatarWithAnime";
 import FeaturedArticleCard from "@/components/featuredArticleCard/featuredArticleCard";
 import Hero from "@/components/hero/hero";
 import LatestArticleCard from "@/components/latestArticleCard/latestArticleCard";
@@ -7,6 +8,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center">
       <Hero title="Retro Tech Something" />
+
       {/*Featured*/}
       <div className="mt-16 w-10/12  sm:mt-32">
         <h2 className="text-2xl md:text-3xl">Ma Precious Post:</h2>

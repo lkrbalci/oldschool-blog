@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "speeches",
+  "info": {
+    "singularName": "speech",
+    "pluralName": "speeches",
+    "displayName": "speeches"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "speeches": {
+      "type": "component",
+      "repeatable": true,
+      "component": "speech.speech"
+    }
+  }
+}

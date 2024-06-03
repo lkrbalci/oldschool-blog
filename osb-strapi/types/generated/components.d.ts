@@ -27,11 +27,23 @@ export interface SocialsSocials extends Schema.Component {
   };
 }
 
+export interface SpeechSpeech extends Schema.Component {
+  collectionName: 'components_speech_speeches';
+  info: {
+    displayName: 'speech';
+    icon: 'emotionHappy';
+  };
+  attributes: {
+    speech: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'pages.pages': PagesPages;
       'socials.socials': SocialsSocials;
+      'speech.speech': SpeechSpeech;
     }
   }
 }
