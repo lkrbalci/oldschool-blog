@@ -1,16 +1,14 @@
 import { useState, useEffect } from "react";
 
-const useRandomValues = (): string | null => {
-  const [value, setValue] = useState<string | null>(null);
+const useRandomValues = (valueCount: number): number | null => {
+  const [value, setValue] = useState<number | null>(null);
 
   useEffect(() => {
     let isMounted = true;
     let timeout1: NodeJS.Timeout;
     let timeout2: NodeJS.Timeout;
 
-    const events: string[] = ["event1", "event2", "event3", "event4", "event5"];
-    const getRandomValue = (): string =>
-      events[Math.floor(Math.random() * events.length)];
+    const getRandomValue = (): number => Math.floor(Math.random() * valueCount);
 
     const updateValue = () => {
       if (isMounted) {
