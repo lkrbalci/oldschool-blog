@@ -5,19 +5,30 @@ import "./globals.css";
 import NavBar from "@/components/navBar/navBar";
 import Footer from "@/components/footer/footer";
 import SideBar from "@/components/sideBar/sideBar";
+import { fetchLayout } from "@/utils/fetch";
+import { Payload } from "@/types/Payload";
+import { Layout } from "@/types/layout";
+import keys from "@/keys";
 
 const vt323 = VT323({
   weight: "400",
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Oldschool Blog",
-  description: "The Most Oldschool Themed Blog Ever",
-  icons: {
-    icon: "/rootifera.png",
-  },
-};
+export async function generateMetadata() {
+  const layout: Payload<Layout> = await fetchLayout();
+  return {
+    title: layout.data.attributes.site_title || "Oldschool Blog",
+    description:
+      layout.data.attributes.site_description ||
+      "The Most Oldschool Themed Blog Ever",
+    icons: {
+      icon:
+        `${keys.API_URL}${layout.data.attributes.logo_img?.data.attributes.url}` ||
+        "/rootifera.png",
+    },
+  };
+}
 
 export default function RootLayout({
   children,

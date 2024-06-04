@@ -4,19 +4,22 @@ import { Media } from '../../../common/schemas-to-ts/Media';
 import { Media_Plain } from '../../../common/schemas-to-ts/Media';
 
 export interface Socials {
-  social_url?: string;
+  social_url: string;
   social_img?: { data: Media };
   hidden?: boolean;
+  name: string;
 }
 export interface Socials_Plain {
-  social_url?: string;
+  social_url: string;
   social_img?: Media_Plain;
   hidden?: boolean;
+  name: string;
 }
 
 export interface Socials_NoRelations {
-  social_url?: string;
+  social_url: string;
   social_img?: number;
   hidden?: boolean;
+  name: string;
 }
 

@@ -16,6 +16,8 @@ export interface Layout {
     createdAt: Date;    updatedAt: Date;    publishedAt?: Date;    logo_img?: { data: Media };
     social: Socials[];
     pages: Pages[];
+    site_description?: string;
+    site_title?: string;
   };
 }
 export interface Layout_Plain {
@@ -23,6 +25,8 @@ export interface Layout_Plain {
   createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  logo_img?: Media_Plain;
   social: Socials_Plain[];
   pages: Pages_Plain[];
+  site_description?: string;
+  site_title?: string;
 }
 
 export interface Layout_NoRelations {
@@ -30,6 +34,8 @@ export interface Layout_NoRelations {
   createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  logo_img?: number;
   social: Socials_NoRelations[];
   pages: Pages_NoRelations[];
+  site_description?: string;
+  site_title?: string;
 }
 
 export interface Layout_AdminPanelLifeCycle {
@@ -37,4 +43,6 @@ export interface Layout_AdminPanelLifeCycle {
   createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  logo_img?: AdminPanelRelationPropertyModification<Media_Plain>;
   social: Socials_Plain[];
   pages: Pages_Plain[];
+  site_description?: string;
+  site_title?: string;
 }

@@ -5,9 +5,13 @@ import AvatarWithAnime from "../avatarWithAnime/AvatarWithAnime";
 import { fetchLayout } from "@/utils/fetch";
 import { Payload } from "@/types/Payload";
 import { Layout } from "@/types/layout";
+import { Socials } from "@/types/Socials";
+import keys from "@/keys";
 
 const Navbar = async () => {
   const layout: Payload<Layout> = await fetchLayout();
+
+  console.log(layout.data.attributes.social);
 
   return (
     <header
@@ -25,45 +29,21 @@ const Navbar = async () => {
       </div>
       {/* SOCIAL */}
       <div className="relative flex items-center gap-2 md:bottom-16 md:w-3/12 md:flex-col">
-        <Link href="/" className="relative h-4 w-4 sm:h-6 sm:w-6">
-          <Image src="/github.png" alt="GitHub icon" width={24} height={24} />
-        </Link>
-        <Link href="/" className="relative hidden h-4 w-4 sm:h-6 sm:w-6">
-          <Image
-            src="/dribbble.png"
-            alt="Dribbble icon"
-            width={24}
-            height={24}
-          />
-        </Link>
-        <Link href="/" className="relative hidden h-4 w-4 sm:h-6 sm:w-6">
-          <Image
-            src="/instagram.png"
-            alt="Instagram icon"
-            width={24}
-            height={24}
-          />
-        </Link>
-        <Link href="/" className="relative hidden h-4 w-4 sm:h-6 sm:w-6">
-          <Image
-            src="/facebook.png"
-            alt="facebook icon"
-            width={24}
-            height={24}
-          />
-        </Link>
-        <Link
-          href="/www.youtube.com/@RootiferasRetroGameplay"
-          className="relative h-4 w-4 sm:h-6 sm:w-6"
-        >
-          <Image src="/youtube.png" alt="Youtube icon" width={24} height={24} />
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/ozbahceliler/"
-          className="relative h-4 w-4 sm:h-6 sm:w-6"
-        >
-          <Image src="/linkedin.png" alt="LinkedIn icon" fill />
-        </Link>
+        {/* {layout.data.attributes.social.map((social: Socials, index: number) => (
+          <Link
+            href={social.social_url || "#"}
+            target="_blank"
+            rel="noreferrer"
+            key={social.social_url}
+            className="relative h-4 w-4 sm:h-6 sm:w-6"
+          >
+            <Image
+              src={`${keys.API_URL}${social.social_img?.data.attributes.url}`}
+              alt={social.name}
+              fill
+            />
+          </Link>
+        ))} */}
       </div>
     </header>
   );

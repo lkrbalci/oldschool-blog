@@ -19,6 +19,8 @@ export interface Layout {
     logo_img?: { data: Media };
     social: Socials[];
     pages: Pages[];
+    site_title?: string;
+    site_description?: string;
   };
 }
 export interface Layout_Plain {

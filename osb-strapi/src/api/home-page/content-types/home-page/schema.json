@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home-page",
     "pluralName": "home-pages",
-    "displayName": "home-page"
+    "displayName": "home-page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,16 +13,27 @@
   "pluginOptions": {},
   "attributes": {
     "hero_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "hero_text": {
+      "type": "string",
+      "maxLength": 24
+    },
+    "featured_post_title": {
+      "type": "string"
+    },
+    "latest_posts_title": {
+      "type": "string"
+    },
+    "more_posts_title": {
       "type": "string"
     }
   }

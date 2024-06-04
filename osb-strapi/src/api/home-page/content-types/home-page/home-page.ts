@@ -9,22 +9,34 @@ export interface HomePage {
   attributes: {
     createdAt: Date;    updatedAt: Date;    publishedAt?: Date;    hero_img?: { data: Media };
     hero_text?: string;
+    featured_post_title?: string;
+    latest_posts_title?: string;
+    more_posts_title?: string;
   };
 }
 export interface HomePage_Plain {
   id: number;
   createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  hero_img?: Media_Plain;
   hero_text?: string;
+  featured_post_title?: string;
+  latest_posts_title?: string;
+  more_posts_title?: string;
 }
 
 export interface HomePage_NoRelations {
   id: number;
   createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  hero_img?: number;
   hero_text?: string;
+  featured_post_title?: string;
+  latest_posts_title?: string;
+  more_posts_title?: string;
 }
 
 export interface HomePage_AdminPanelLifeCycle {
   id: number;
   createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  hero_img?: AdminPanelRelationPropertyModification<Media_Plain>;
   hero_text?: string;
+  featured_post_title?: string;
+  latest_posts_title?: string;
+  more_posts_title?: string;
 }

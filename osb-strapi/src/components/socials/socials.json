@@ -8,7 +8,8 @@
   "options": {},
   "attributes": {
     "social_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "social_img": {
       "type": "media",
@@ -21,6 +22,10 @@
     "hidden": {
       "type": "boolean",
       "default": false
+    },
+    "name": {
+      "type": "string",
+      "required": true
     }
   }
 }

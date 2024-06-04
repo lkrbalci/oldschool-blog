@@ -888,13 +888,20 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     singularName: 'home-page';
     pluralName: 'home-pages';
     displayName: 'home-page';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     hero_img: Attribute.Media;
-    hero_text: Attribute.String;
+    hero_text: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 24;
+      }>;
+    featured_post_title: Attribute.String;
+    latest_posts_title: Attribute.String;
+    more_posts_title: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -918,7 +925,7 @@ export interface ApiLayoutLayout extends Schema.SingleType {
   info: {
     singularName: 'layout';
     pluralName: 'layouts';
-    displayName: 'layout';
+    displayName: 'Layout';
     description: '';
   };
   options: {
@@ -928,6 +935,8 @@ export interface ApiLayoutLayout extends Schema.SingleType {
     logo_img: Attribute.Media;
     social: Attribute.Component<'socials.socials', true>;
     pages: Attribute.Component<'pages.pages', true>;
+    site_description: Attribute.String;
+    site_title: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -985,12 +994,15 @@ export interface ApiSpeechSpeech extends Schema.CollectionType {
     singularName: 'speech';
     pluralName: 'speeches';
     displayName: 'speeches';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    speeches: Attribute.Component<'speech.speech', true>;
+    speech1: Attribute.String;
+    speech2: Attribute.String;
+    speech3: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

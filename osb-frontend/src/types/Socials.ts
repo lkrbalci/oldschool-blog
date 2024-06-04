@@ -6,6 +6,7 @@ export interface Socials {
   social_url?: string;
   social_img?: { data: Media };
   hidden?: boolean;
+  name: string;
 }
 export interface Socials_Plain {
   social_url?: string;
