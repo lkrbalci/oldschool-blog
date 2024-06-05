@@ -988,12 +988,12 @@ export interface ApiPostPost extends Schema.CollectionType {
   };
 }
 
-export interface ApiSpeechSpeech extends Schema.CollectionType {
+export interface ApiSpeechSpeech extends Schema.SingleType {
   collectionName: 'speeches';
   info: {
     singularName: 'speech';
     pluralName: 'speeches';
-    displayName: 'speeches';
+    displayName: 'speech';
     description: '';
   };
   options: {

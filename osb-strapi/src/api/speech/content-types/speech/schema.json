@@ -1,10 +1,10 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "speeches",
   "info": {
     "singularName": "speech",
     "pluralName": "speeches",
-    "displayName": "speeches",
+    "displayName": "speech",
     "description": ""
   },
   "options": {
