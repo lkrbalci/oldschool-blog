@@ -11,8 +11,6 @@ import keys from "@/keys";
 const Navbar = async () => {
   const layout: Payload<Layout> = await fetchLayout();
 
-  console.log(layout.data.attributes.social);
-
   return (
     <header
       role="navigation"
@@ -29,7 +27,7 @@ const Navbar = async () => {
       </div>
       {/* SOCIAL */}
       <div className="relative flex items-center gap-2 md:bottom-16 md:w-3/12 md:flex-col">
-        {/* {layout.data.attributes.social.map((social: Socials, index: number) => (
+        {layout.data.attributes.social.map((social: Socials, index: number) => (
           <Link
             href={social.social_url || "#"}
             target="_blank"
@@ -43,7 +41,7 @@ const Navbar = async () => {
               fill
             />
           </Link>
-        ))} */}
+        ))}
       </div>
     </header>
   );
